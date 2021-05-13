@@ -17,13 +17,13 @@ i) Add/change packaging format to your project's pom.xml file:
   
   ii)  Add the Tomcat dependency:
 
-<dependencies>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
 <dependency>
-   <groupId>org.springframework.boot</groupId>
-   <artifactId>spring-boot-starter-tomcat</artifactId>
-   <scope>provided</scope>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    <version>2.4.5</version>
 </dependency>
-</dependencies>
+
 
 
 iii) Initialize the Servlet context required by Tomcat by implementing the SpringBootServletInitializer interface:
@@ -42,3 +42,4 @@ Step 2:  Create a Java+Tomcat product by selecting the requirements
 
 Step 3:  Click on manage and go to file manager. Place your .war file inside tomcat/webapps and it'll extract the war file.
 
+Step 4: Reboot the application and search domain-name/application-name to access your application
