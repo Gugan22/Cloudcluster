@@ -17,12 +17,13 @@ i) Add/change packaging format to your project's pom.xml file:
   
   ii)  Add the Tomcat dependency:
 
-
+<dependencies>
 <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-tomcat</artifactId>
    <scope>provided</scope>
 </dependency>
+</dependencies>
 
 
 iii) Initialize the Servlet context required by Tomcat by implementing the SpringBootServletInitializer interface:
